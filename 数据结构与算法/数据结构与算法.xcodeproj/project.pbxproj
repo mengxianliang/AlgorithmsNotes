@@ -21,6 +21,7 @@
 		C29A31722637E2F5002A73CA /* _203_移除链表元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A31712637E2F5002A73CA /* _203_移除链表元素.swift */; };
 		C29A31772637F9CA002A73CA /* _83_ 删除排序链表中的重复元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A31762637F9CA002A73CA /* _83_ 删除排序链表中的重复元素.swift */; };
 		C29A317C2638040D002A73CA /* _876_链表的中间结点.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A317B2638040D002A73CA /* _876_链表的中间结点.swift */; };
+		C29A3186263961B9002A73CA /* _204_计数质数.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A3185263961B8002A73CA /* _204_计数质数.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		C29A31712637E2F5002A73CA /* _203_移除链表元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_203_移除链表元素.swift"; sourceTree = "<group>"; };
 		C29A31762637F9CA002A73CA /* _83_ 删除排序链表中的重复元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_83_ 删除排序链表中的重复元素.swift"; sourceTree = "<group>"; };
 		C29A317B2638040D002A73CA /* _876_链表的中间结点.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_876_链表的中间结点.swift"; sourceTree = "<group>"; };
+		C29A3185263961B8002A73CA /* _204_计数质数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_204_计数质数.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		C29A31242637B77A002A73CA /* 数据结构与算法 */ = {
 			isa = PBXGroup;
 			children = (
+				C29A318426396115002A73CA /* 简单 */,
 				C29A31582637B785002A73CA /* 链表 */,
 				C29A31252637B77A002A73CA /* AppDelegate.swift */,
 				C29A31272637B77A002A73CA /* SceneDelegate.swift */,
@@ -152,6 +155,14 @@
 				C29A31642637B7B2002A73CA /* ListNode.swift */,
 			);
 			path = "链表";
+			sourceTree = "<group>";
+		};
+		C29A318426396115002A73CA /* 简单 */ = {
+			isa = PBXGroup;
+			children = (
+				C29A3185263961B8002A73CA /* _204_计数质数.swift */,
+			);
+			path = "简单";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +302,7 @@
 				C29A31772637F9CA002A73CA /* _83_ 删除排序链表中的重复元素.swift in Sources */,
 				C29A31262637B77A002A73CA /* AppDelegate.swift in Sources */,
 				C29A31282637B77A002A73CA /* SceneDelegate.swift in Sources */,
+				C29A3186263961B9002A73CA /* _204_计数质数.swift in Sources */,
 				C29A317C2638040D002A73CA /* _876_链表的中间结点.swift in Sources */,
 				C29A315D2637B79F002A73CA /* _206_反转链表.swift in Sources */,
 			);

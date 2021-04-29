@@ -20,7 +20,10 @@ class ViewController: UIViewController {
         
 //        RemoveDuplicates.init()
         
-        MiddleOfTheLinkedList.init()
+//        MiddleOfTheLinkedList.init()
+        
+        //计数质数
+        CountPrimes.init()
         
     }
 
