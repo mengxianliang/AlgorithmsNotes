@@ -28,13 +28,19 @@ class ViewController: UIViewController {
 //        MiddleOfTheLinkedList.init()
         
         //计数质数
-        CountPrimes.init()
+//        CountPrimes.init()
         
         //有效的括号
 //        ValidParentheses.init()
         
         //括号的得分
 //        ScoreOfParentheses.init()
+        
+        //逆波兰表达式
+//        EvalRPN.init()
+        
+        //基本计算器
+        BasicCalculator.init()
     }
 
 
