@@ -9,10 +9,14 @@ import Foundation
 
 class CountPrimes: NSObject {
     
+    var totalNum: Int = 0
+    
     override init() {
         super.init()
         let n = 111
-        print(n,"以内的质数个数是",self.countPrimes2(n))
+        print("方法一",n,"以内的质数个数是",self.countPrimes(n))
+        self.countPrimes2(111)
+        print("方法二",n,"以内的质数个数是",self.totalNum)
     }
     
     //枚举方法，每个数遍历一遍比自己小的数
@@ -65,40 +69,27 @@ class CountPrimes: NSObject {
         return num
     }
     
-    //递归 枚举
-    func countPrimes2(_ n: Int) -> Int {
-        if n <= 2 {
-            return 0
-        }
-        var primesNum = countPrimes2(n - 1)
-        for i in 2..<n {
-            var isPrimes = true
-            for j in 2..<i {
-                if i%j == 0 {
-                    isPrimes = false
-                    break
-                }
-            }
-            if isPrimes {
-                print(i,"是质数");
-                primesNum += 1
-            }
+    //递归方法判断是否是质数
+    func countPrimes2(_ n: Int){
+        
+        //判断边界条件
+        if n <= 1 {
+            return
         }
         
+        //保存质数个数，调用递归方法
+        self.countPrimes2(n - 1)
         
-//        for i in 2..<n {
-//            var isPrimes = true
-//            for j in 2..<i {
-//                if i%j == 0 {
-//                    isPrimes = false
-//                    break
-//                }
-//            }
-//            if isPrimes {
-//                print(i,"是质数");
-//                primesNum = primesNum + 1
-//            }
-//        }
-        return primesNum
+        var isPrimes = true
+        for j in 2..<n {
+            if n%j == 0 {
+                isPrimes = false
+                break
+            }
+        }
+        if isPrimes {
+            print(n,"是质数");
+            self.totalNum = self.totalNum + 1
+        }
     }
 }
