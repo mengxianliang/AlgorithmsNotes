@@ -46,7 +46,10 @@ class ViewController: UIViewController {
 //        Sqrtx.init()
         
         //交换数字
-        SwapNumbers.init()
+//        SwapNumbers.init()
+        
+        //阶乘后的零
+        FactorialTrailingZeroes.init()
         
         
     }
