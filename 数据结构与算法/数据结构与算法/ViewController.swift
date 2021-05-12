@@ -40,7 +40,15 @@ class ViewController: UIViewController {
 //        EvalRPN.init()
         
         //基本计算器
-        BasicCalculator.init()
+//        BasicCalculator.init()
+        
+        //x的平方根
+//        Sqrtx.init()
+        
+        //交换数字
+        SwapNumbers.init()
+        
+        
     }
 
 
