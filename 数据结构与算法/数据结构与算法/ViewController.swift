@@ -49,8 +49,33 @@ class ViewController: UIViewController {
 //        SwapNumbers.init()
         
         //阶乘后的零
-        FactorialTrailingZeroes.init()
+//        FactorialTrailingZeroes.init()
         
+        //用栈实现队列
+//        let myQueue = MyQueue.init()
+//        myQueue.push(1)
+//        myQueue.push(2)
+//        myQueue.push(3)
+//        print(myQueue.empty())
+//        print(myQueue.peek())
+//        print(myQueue.pop())
+//        print(myQueue.empty())
+        
+        
+        //用队列实现栈
+        let myStack = MyStack.init()
+        myStack.push(1);
+        myStack.push(2);
+//        myStack.push(3);
+//        myStack.push(4);
+        print(myStack.top())
+        print(myStack.top())
+        
+        print(myStack.pop())
+        print(myStack.pop())
+//        print(myStack.pop())
+//        print(myStack.pop())
+        print(myStack.empty())
         
     }
 
