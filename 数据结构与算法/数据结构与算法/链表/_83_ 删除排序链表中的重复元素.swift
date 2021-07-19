@@ -18,7 +18,7 @@ class RemoveDuplicates: NSObject {
         let node4 = ListNode.init(-1, node3)
         let node5 = ListNode.init(-1, node4)
         
-        //保存链表的head
+        /// 保存链表的head
         var head: ListNode? = node5
         head?.logLinkedList()
         head = self.deleteDuplicates(head)
@@ -31,9 +31,9 @@ class RemoveDuplicates: NSObject {
         if head == nil {
             return head
         }
-        //设置临时节点
+        /// 设置临时节点
         var currentNode = head;
-        //最后一个节点不循环
+        /// 最后一个节点不循环
         while currentNode?.next != nil {
             print("遍历了一次")
             if currentNode?.val == currentNode?.next?.val {

@@ -37,11 +37,11 @@ class ScoreOfParentheses: NSObject {
      找到左括号时，level*2 找到又括号时，level/2，找到成对括号时代表需要加分，score += level
      */
     func scoreOfParentheses(_ S: String) -> Int {
-        //总得分
+        /// 总得分
         var score = 0
-        //括号等级
+        /// 括号等级
         var level = 1
-        //上一次循环的括号
+        /// 上一次循环的括号
         var lastS = "("
         for s1 in S {
             if s1 == "(" {
@@ -58,11 +58,11 @@ class ScoreOfParentheses: NSObject {
     }
     
     
-    //用栈的思想
+    /// 用栈的思想
     func scoreOfParentheses2(_ S: String) -> Int {
         
         var arr = [Int]()
-        //入栈当前分数
+        /// 入栈当前分数
         arr.append(0)
         for s1 in S {
             if s1 == "(" {

@@ -18,7 +18,7 @@ class RemoveLinkedListElemets: NSObject {
         let node4 = ListNode.init(3, node3)
         let node5 = ListNode.init(3, node4)
         
-        //保存链表的head
+        /// 保存链表的head
         var head: ListNode? = node5
         head?.logLinkedList()
         head = self.removeElements2(head, 3)
@@ -35,13 +35,13 @@ class RemoveLinkedListElemets: NSObject {
         var lastNode = head
         var currentNode = head
         while currentNode != nil {
-            //如果是头
+            /// 如果是头
             if currentNode?.val == val && currentNode === newHead {
                 newHead = currentNode?.next;
                 currentNode = currentNode?.next;
                 lastNode = currentNode;
             }else if currentNode?.val == val {
-                //先删除currentNode
+                /// 先删除currentNode
                 lastNode?.next = currentNode?.next;
                 currentNode = currentNode?.next;
             }else {
@@ -52,12 +52,12 @@ class RemoveLinkedListElemets: NSObject {
         return newHead
     }
     
-    //官方做法
+    /// 官方做法
     func removeElements2(_ head: ListNode?, _ val: Int) -> ListNode? {
         if head == nil {
             return head
         }
-        //设置一个哨兵节点，保证链表有头
+        /// 设置一个哨兵节点，保证链表有头
         let sentinel = ListNode.init()
         sentinel.next = head;
         

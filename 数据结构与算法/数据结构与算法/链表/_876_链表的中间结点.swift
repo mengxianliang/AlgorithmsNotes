@@ -18,7 +18,7 @@ class MiddleOfTheLinkedList: NSObject {
         let node5 = ListNode.init(5, node4)
         let node6 = ListNode.init(6, node5)
         
-        //保存链表的head
+        /// 保存链表的head
         let head: ListNode? = node6
         
         head?.logLinkedList()
@@ -56,7 +56,7 @@ class MiddleOfTheLinkedList: NSObject {
         return num
     }
     
-    //数组法
+    /// 数组法
     func middleNode1(_ head: ListNode?) -> ListNode? {
         if head == nil || head?.next == nil {
             return head
@@ -71,7 +71,7 @@ class MiddleOfTheLinkedList: NSObject {
         return arr[arr.count/2]
     }
     
-    //遍历指针法
+    /// 遍历指针法
     func middleNode2(_ head: ListNode?) -> ListNode? {
         if head == nil || head?.next == nil {
             return head
@@ -94,7 +94,7 @@ class MiddleOfTheLinkedList: NSObject {
         return tempNode
     }
     
-    //快慢指针法
+    /// 快慢指针法
     func middleNode3(_ head: ListNode?) -> ListNode? {
         if head == nil || head?.next == nil {
             return head
