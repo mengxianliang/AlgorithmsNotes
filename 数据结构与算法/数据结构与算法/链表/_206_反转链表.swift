@@ -24,7 +24,8 @@ class ReverseLinkedList: NSObject {
         
     }
 
-    //递归方式反转链表
+    /// 一般来说，递归需要有边界条件、递归前进段和递归返回段。当边界条件不满足时，递归前进；当边界条件满足时，递归返回。
+    /// 递归方式反转链表
     func reverseLinkedList(_ head: ListNode?) -> ListNode? {
         
         //递归的边界条件

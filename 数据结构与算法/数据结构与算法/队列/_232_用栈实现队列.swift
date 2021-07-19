@@ -3,15 +3,15 @@
 //  数据结构与算法
 //
 //  Created by mxl on 2021/5/13.
-//
+//  https://leetcode-cn.com/problems/implement-queue-using-stacks/
 
 import Foundation
 
 class MyQueue {
     
-    //入队栈
+    /// 入队栈
     var inStack: Array = [Int]()
-    //出队栈
+    /// 出队栈
     var outStack: Array = [Int]()
 
     /** Initialize your data structure here. */
@@ -48,7 +48,7 @@ class MyQueue {
         return inStack.isEmpty && outStack.isEmpty
     }
     
-    //先判断outStack是否为空，如果是空则将inStack里的对象都压入outStatck中
+    /// 先判断outStack是否为空，如果是空则将inStack里的对象都压入outStatck中
     func check() -> () {
         if outStack.isEmpty {
             for i in inStack.reversed() {

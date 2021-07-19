@@ -25,7 +25,6 @@ class BasicCalculator: NSObject {
         
         print("计算结果是",result)
         
-        
     }
     
     /**

@@ -16,6 +16,7 @@
 		C22B764D264BBFEE00911ABE /* _172_阶乘后的零.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22B764C264BBFEE00911ABE /* _172_阶乘后的零.swift */; };
 		C22B769C264CD13B00911ABE /* _232_用栈实现队列.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22B769B264CD13B00911ABE /* _232_用栈实现队列.swift */; };
 		C22B769F264D166C00911ABE /* _225_用队列实现栈.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22B769E264D166C00911ABE /* _225_用队列实现栈.swift */; };
+		C23EFA6A26A56F0700E936EC /* _作业 in Resources */ = {isa = PBXBuildFile; fileRef = C23EFA6926A56F0700E936EC /* _作业 */; };
 		C29A31262637B77A002A73CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A31252637B77A002A73CA /* AppDelegate.swift */; };
 		C29A31282637B77A002A73CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A31272637B77A002A73CA /* SceneDelegate.swift */; };
 		C29A312A2637B77A002A73CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A31292637B77A002A73CA /* ViewController.swift */; };
@@ -31,6 +32,8 @@
 		C29A31772637F9CA002A73CA /* _83_ 删除排序链表中的重复元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A31762637F9CA002A73CA /* _83_ 删除排序链表中的重复元素.swift */; };
 		C29A317C2638040D002A73CA /* _876_链表的中间结点.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A317B2638040D002A73CA /* _876_链表的中间结点.swift */; };
 		C29A3186263961B9002A73CA /* _204_计数质数.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A3185263961B8002A73CA /* _204_计数质数.swift */; };
+		C2B074C226A51F3D004F3E57 /* _226_翻转二叉树.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B074C126A51F3D004F3E57 /* _226_翻转二叉树.swift */; };
+		C2B074C426A52007004F3E57 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B074C326A52007004F3E57 /* TreeNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,7 @@
 		C22B764C264BBFEE00911ABE /* _172_阶乘后的零.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_172_阶乘后的零.swift"; sourceTree = "<group>"; };
 		C22B769B264CD13B00911ABE /* _232_用栈实现队列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_232_用栈实现队列.swift"; sourceTree = "<group>"; };
 		C22B769E264D166C00911ABE /* _225_用队列实现栈.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_225_用队列实现栈.swift"; sourceTree = "<group>"; };
+		C23EFA6926A56F0700E936EC /* _作业 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "_作业"; sourceTree = "<group>"; };
 		C29A31222637B77A002A73CA /* 数据结构与算法.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "数据结构与算法.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29A31252637B77A002A73CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C29A31272637B77A002A73CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		C29A31762637F9CA002A73CA /* _83_ 删除排序链表中的重复元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_83_ 删除排序链表中的重复元素.swift"; sourceTree = "<group>"; };
 		C29A317B2638040D002A73CA /* _876_链表的中间结点.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_876_链表的中间结点.swift"; sourceTree = "<group>"; };
 		C29A3185263961B8002A73CA /* _204_计数质数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_204_计数质数.swift"; sourceTree = "<group>"; };
+		C2B074C126A51F3D004F3E57 /* _226_翻转二叉树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_226_翻转二叉树.swift"; sourceTree = "<group>"; };
+		C2B074C326A52007004F3E57 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,7 @@
 		C29A31242637B77A002A73CA /* 数据结构与算法 */ = {
 			isa = PBXGroup;
 			children = (
+				C2B074BD26A13645004F3E57 /* 二叉树 */,
 				C22B769A264CD11E00911ABE /* 队列 */,
 				C22B7649264BB65B00911ABE /* 面试题 */,
 				C22B763E264909BD00911ABE /* 栈 */,
@@ -214,6 +221,16 @@
 				C22B764C264BBFEE00911ABE /* _172_阶乘后的零.swift */,
 			);
 			path = "简单";
+			sourceTree = "<group>";
+		};
+		C2B074BD26A13645004F3E57 /* 二叉树 */ = {
+			isa = PBXGroup;
+			children = (
+				C2B074C126A51F3D004F3E57 /* _226_翻转二叉树.swift */,
+				C2B074C326A52007004F3E57 /* TreeNode.swift */,
+				C23EFA6926A56F0700E936EC /* _作业 */,
+			);
+			path = "二叉树";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23EFA6A26A56F0700E936EC /* _作业 in Resources */,
 				C29A31322637B77C002A73CA /* LaunchScreen.storyboard in Resources */,
 				C29A312F2637B77C002A73CA /* Assets.xcassets in Resources */,
 				C29A312D2637B77A002A73CA /* Main.storyboard in Resources */,
@@ -358,7 +376,9 @@
 				C22B769C264CD13B00911ABE /* _232_用栈实现队列.swift in Sources */,
 				C29A31282637B77A002A73CA /* SceneDelegate.swift in Sources */,
 				C29A3186263961B9002A73CA /* _204_计数质数.swift in Sources */,
+				C2B074C226A51F3D004F3E57 /* _226_翻转二叉树.swift in Sources */,
 				C22B7644264A241C00911ABE /* _150_逆波兰表达式求值.swift in Sources */,
+				C2B074C426A52007004F3E57 /* TreeNode.swift in Sources */,
 				C22B764D264BBFEE00911ABE /* _172_阶乘后的零.swift in Sources */,
 				C22B764026490A6E00911ABE /* _20_有效的括号.swift in Sources */,
 				C29A317C2638040D002A73CA /* _876_链表的中间结点.swift in Sources */,

@@ -22,7 +22,7 @@ class ValidParentheses: NSObject {
         
     }
     
-    //方法一：替换
+    /// 方法一：替换
     func isValid1(_ s: String) -> Bool {
         if s.count%2 != 0 {
             return false
@@ -37,31 +37,31 @@ class ValidParentheses: NSObject {
     }
     
     
-    //方法一：栈的思想
+    /// 方法一：栈的思想
     func isValid2(_ s: String) -> Bool {
         if s.count%2 != 0 {
             return false
         }
         var arr = [String]()
         for s1 in s {
-            //判断是否是左括号，左括号直接入栈
+            /// 判断是否是左括号，左括号直接入栈
             if s1 == "{" || s1 == "[" || s1 == "(" {
                 arr.append(String(s1))
-            }else {//其他为右括号
-                //如果栈为空，代表没有左括号，则返回失败
+            }else {/// 其他为右括号
+                /// 如果栈为空，代表没有左括号，则返回失败
                 if arr.count == 0 {
                     return false
                 }
-                //找出栈里面最后的元素
+                /// 找出栈里面最后的元素
                 let left = arr.last
-                //判断是否
+                /// 判断是否
                 if left == "{" && s1 != "}" {return false}
                 if left == "[" && s1 != "]" {return false}
                 if left == "(" && s1 != ")" {return false}
                 arr.removeLast()
             }
         }
-        //如果不是空，则代表左右括号不匹配
+        /// 如果不是空，则代表左右括号不匹配
         return arr.isEmpty
     }
     

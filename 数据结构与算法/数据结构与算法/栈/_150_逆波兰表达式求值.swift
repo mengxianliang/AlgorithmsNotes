@@ -20,62 +20,62 @@ class EvalRPN: NSObject {
     }
     
     func evalRPN(_ tokens: [String]) -> Int {
-        //保存数字的栈
+        /// 保存数字的栈
         var numbers = [Int]()
         
         for str in tokens {
             if str == "+" {
-                //栈顶
+                /// 栈顶
                 let last = numbers.last!
                 numbers.removeLast()
                 
-                //次栈顶
+                /// 次栈顶
                 let last1 = numbers.last!
                 numbers.removeLast()
                 
-                //将次栈顶op栈顶的结果入栈
+                /// 将次栈顶op栈顶的结果入栈
                 let result = last1 + last
                 numbers.append(result)
                 
             }else if str == "-" {
                 
-                //栈顶
+                /// 栈顶
                 let last = numbers.last!
                 numbers.removeLast()
                 
-                //次栈顶
+                /// 次栈顶
                 let last1 = numbers.last!
                 numbers.removeLast()
                 
-                //将次栈顶op栈顶的结果入栈
+                /// 将次栈顶op栈顶的结果入栈
                 let result = last1 - last
                 numbers.append(result)
                 
             }else if str == "*" {
                 
-                //栈顶
+                /// 栈顶
                 let last = numbers.last!
                 numbers.removeLast()
                 
-                //次栈顶
+                /// 次栈顶
                 let last1 = numbers.last!
                 numbers.removeLast()
                 
-                //将次栈顶op栈顶的结果入栈
+                /// 将次栈顶op栈顶的结果入栈
                 let result = last1 * last
                 numbers.append(result)
                 
             }else if str == "/" {
                 
-                //栈顶
+                /// 栈顶
                 let last = numbers.last!
                 numbers.removeLast()
                 
-                //次栈顶
+                /// 次栈顶
                 let last1 = numbers.last!
                 numbers.removeLast()
                 
-                //将次栈顶op栈顶的结果入栈
+                /// 将次栈顶op栈顶的结果入栈
                 let result = last1 / last
                 numbers.append(result)
                 

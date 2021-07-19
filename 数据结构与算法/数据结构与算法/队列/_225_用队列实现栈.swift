@@ -3,13 +3,13 @@
 //  数据结构与算法
 //
 //  Created by mxl on 2021/5/13.
-//
+//  https://leetcode-cn.com/problems/implement-stack-using-queues/
 
 import Foundation
 
 class MyStack {
     
-    //声明两个队列，用于相互转换元素
+    /// 声明两个队列，用于相互转换元素
     var queue1: Array = [Int]()
     var queue2: Array = [Int]()
 
@@ -31,7 +31,7 @@ class MyStack {
     }
     
     /** Removes the element on top of the stack and returns that element. */
-    //代表元素都存在queue1中，queue1中的出末尾元素外其他元素pop，push到queue2中
+    /// 代表元素都存在queue1中，queue1中的出末尾元素外其他元素pop，push到queue2中
     func pop() -> Int {
         var top = 0
         if !queue1.isEmpty {

@@ -63,19 +63,22 @@ class ViewController: UIViewController {
         
         
         //用队列实现栈
-        let myStack = MyStack.init()
-        myStack.push(1);
-        myStack.push(2);
+//        let myStack = MyStack.init()
+//        myStack.push(1);
+//        myStack.push(2);
 //        myStack.push(3);
 //        myStack.push(4);
-        print(myStack.top())
-        print(myStack.top())
+//        print(myStack.top())
+//        print(myStack.top())
         
-        print(myStack.pop())
-        print(myStack.pop())
 //        print(myStack.pop())
 //        print(myStack.pop())
-        print(myStack.empty())
+//        print(myStack.pop())
+//        print(myStack.pop())
+//        print(myStack.empty())
+        
+        /// 反转二叉树
+        InvertBinaryTree.init()
         
     }
 

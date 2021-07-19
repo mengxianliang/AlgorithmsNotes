@@ -75,7 +75,6 @@ class RemoveLinkedListElemets: NSObject {
         return sentinel.next
     }
     
-    
     func logLinkedList(listNode: ListNode?) {
         var node: ListNode? = listNode
         let string = NSMutableString.init(string: "[")
