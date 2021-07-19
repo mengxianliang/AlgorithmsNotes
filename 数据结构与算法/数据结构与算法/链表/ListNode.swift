@@ -18,7 +18,7 @@ public class ListNode {
         var node: ListNode? = self
         let string = NSMutableString.init(string: "[")
         while node != nil {
-            string.appendFormat("%d", node?.val as! CVarArg)
+            string.append("\(node?.val ?? 0)")
             if node?.next != nil {
                 string.append(", ")
             }

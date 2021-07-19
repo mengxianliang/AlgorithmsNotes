@@ -79,7 +79,7 @@ class RemoveLinkedListElemets: NSObject {
         var node: ListNode? = listNode
         let string = NSMutableString.init(string: "[")
         while node != nil {
-            string.appendFormat("%d", node?.val as! CVarArg)
+            string.append("\(node?.val ?? 0)")
             if node?.next != nil {
                 string.append(", ")
             }

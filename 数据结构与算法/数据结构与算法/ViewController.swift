@@ -78,7 +78,7 @@ class ViewController: UIViewController {
 //        print(myStack.empty())
         
         /// 反转二叉树
-        InvertBinaryTree.init()
+//        InvertBinaryTree.init()
         
     }
 
