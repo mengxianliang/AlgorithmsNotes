@@ -24,7 +24,7 @@
 目标：所有子树的左右节点交换位置
  */
 
-import UIKit
+import Foundation
 
 class InvertBinaryTree: NSObject {
     

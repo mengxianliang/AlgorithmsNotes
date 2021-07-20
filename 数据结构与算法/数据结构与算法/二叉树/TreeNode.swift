@@ -20,18 +20,45 @@ class TreeNode: NSObject {
     }
     
     
+    var pringStr = ""
     func printBinaryTree() {
-        print("打印二叉树，根节点：\(self.val)")
-        printBinaryTreeWithRoot(self)
+        pringStr = ""
+//        printBinaryTreeWithRoot(self)
+        printBinaryTreeBySequenceTraversal(self)
+        print("打印二叉树----"+pringStr)
     }
     
-    private func printBinaryTreeWithRoot(_ root: TreeNode?) {
+    /// 前序遍历打印
+    private func preorderTraversalBinaryTreeWithRoot(_ root: TreeNode?) {
+        if root == nil {return}
+        preorderTraversalBinaryTreeWithRoot(root!.left)
+        pringStr.append("\(root!.val) ")
+        preorderTraversalBinaryTreeWithRoot(root!.right)
+    }
+    
+    /// 层序遍历打印
+    private func printBinaryTreeBySequenceTraversal(_ root: TreeNode?) {
         if root == nil {return}
         
-        print("currentNode = \(root?.val ?? 0)")
+        var queue = [TreeNode]()
+        queue.append(root!)
         
-        printBinaryTreeWithRoot(root?.left)
-        printBinaryTreeWithRoot(root?.right)
+        while !queue.isEmpty {
+            
+            let node = queue.first
+            queue.removeFirst()
+            pringStr.append("\(node!.val) ")
+            
+            if node?.left != nil {
+                queue.append((node?.left)!)
+            }
+            
+            if node?.right != nil {
+                queue.append((node?.right)!)
+            }
+            
+        }
+        
         
     }
 }
