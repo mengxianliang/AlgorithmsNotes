@@ -26,13 +26,25 @@ class MinimumDifferenceInBTS: NSObject {
         print("二叉搜索树的最小绝对差是：\(miniDif)")
     }
     
+    
+    /**
+     测试二叉树结构
+        5
+       / \
+      3   6
+     / \   \
+    2   4   7
+     
+     思路：二叉搜索树中序遍历【递归】，结果一定是从小到大，挨个比较两个相邻节点间的差值
+     */
+    
     var arr = [Int]()
     
     func getMinimumDifference(_ root: TreeNode?) -> Int {
         
         var miniDif = Int.max
         
-        inOrderTraversalBinaryTreeWithRoot(root)
+        inorderTraversal(root)
         
         print("arr = \(arr)")
         
@@ -54,11 +66,11 @@ class MinimumDifferenceInBTS: NSObject {
         return miniDif
     }
     
-    /// 中序遍历
-    func inOrderTraversalBinaryTreeWithRoot(_ root: TreeNode?) {
+    /// 递归中序遍历
+    func inorderTraversal(_ root: TreeNode?) {
         if root == nil {return}
-        inOrderTraversalBinaryTreeWithRoot(root!.left)
+        inorderTraversal(root!.left)
         arr.append(root!.val)
-        inOrderTraversalBinaryTreeWithRoot(root!.right)
+        inorderTraversal(root!.right)
     }
 }
