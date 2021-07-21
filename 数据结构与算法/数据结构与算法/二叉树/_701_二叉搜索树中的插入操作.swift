@@ -21,10 +21,10 @@ class InsertIntoBST: NSObject {
         let node12 = TreeNode(12, nil, node14)
         
         let node10 = TreeNode.init(10, node6, node12)
-        node10.printBinaryTree()
+        node10.printBinaryTree(.levelOrder)
         
         let root = insertIntoBST(node10, 11)
-        root?.printBinaryTree()
+        root?.printBinaryTree(.levelOrder)
         
     }
     

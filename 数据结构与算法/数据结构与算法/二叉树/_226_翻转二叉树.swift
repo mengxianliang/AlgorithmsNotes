@@ -41,11 +41,11 @@ class InvertBinaryTree: NSObject {
         
         let node4 = TreeNode.init(4, node2, node7)
         
-        node4.printBinaryTree()
+        node4.printBinaryTree(.levelOrder)
         
         let root = invertTree4(node4)
         
-        root?.printBinaryTree()
+        root?.printBinaryTree(.levelOrder)
     }
     
     /// 方法一：前序遍历（先访问自己，再访问左右节点）

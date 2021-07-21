@@ -12,67 +12,39 @@ class ConvertSortedArrayToBST: NSObject {
     override init() {
         super.init()
         
-        let nums = [1,2,3,4,5,6,7,8]
+        let nums = [0,1,2,3,4,5]
         print("有序数组：\(nums)")
         
         let root = sortedArrayToBST(nums)
-        root?.printBinaryTree()
+        root?.printBinaryTree(.levelOrder)
         
     }
     
     /**
-     
-     
-      5
-    1   6
-   2 7 3 8
-  4
-     
-     
      思路：
-     有序数组和二叉搜索树的中序遍历排序方式一致，所以可以取数组的中间院所作为根节点，
+     有序数组和二叉搜索树的中序遍历排序方式一致，所以可以取数组的中间元素作为根节点，
+     再取左侧剩余元素重复上面步骤作为左子树，再取后面剩余元素组成右子树
+     
      保证左右子树的高度差不大于1
      
      */
     
     func sortedArrayToBST(_ nums: [Int]) -> TreeNode? {
-        if nums.count == 1 {return TreeNode(nums.first!)}
-        
-        let rootIndex = nums.count/2
-        let root = TreeNode(nums[rootIndex])
-        
-        for num in nums {
-            insertIntoBST(root, num)
-        }
-        return root
-        
+        return treeNodeHelper(nums, 0, nums.count - 1)
     }
     
-    func insertIntoBST(_ root: TreeNode?, _ val: Int) {
-        var current = root
-        while current != nil {
-            if val > current!.val{
-                /// 如果右子树是空，则添加新的子树
-                if current?.right == nil {
-                    current?.right = TreeNode(val)
-                    break
-                }
-                
-                current = current?.right
-            }
-            
-            if val < current!.val {
-                /// 如果右子树是空，则添加新的子树
-                if current?.left == nil {
-                    current?.left = TreeNode(val)
-                    break
-                }
-                current = current?.left
-            }
-            
-            if val == current!.val {
-                break
-            }
-        }
+    /// 递归方法
+    func treeNodeHelper(_ nums: [Int], _ left: Int, _ right: Int) -> TreeNode? {
+        if left > right {return nil}
+        
+        /// 取中间值得到根节点
+        let midIndex = (left + right)/2
+        let root = TreeNode(nums[midIndex])
+        
+        /// 设置左右子树
+        root.left = treeNodeHelper(nums, left, midIndex - 1)
+        root.right = treeNodeHelper(nums, midIndex + 1, right)
+        return root
     }
+    
 }

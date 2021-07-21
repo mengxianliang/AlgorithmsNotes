@@ -103,9 +103,19 @@ class ViewController: UIViewController {
 //        MinimumDistanceBetweenBST()
         
         /// 将有序数组转换为二叉搜索树
-        ConvertSortedArrayToBST()
+//        ConvertSortedArrayToBST()
         
+        /// 二叉搜索树的范围和
+//        RangeSumOfBST()
         
+        /// 二叉搜索树的最近公共祖先
+//        LowestCommonAncestorOfBST()
+        
+        /// 二叉搜索树中第K小的元素
+//        KthSmallestElementInBST()
+        
+        /// 恢复二叉搜索树
+        RecoverBST()
     }
 
 

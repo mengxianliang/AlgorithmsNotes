@@ -21,7 +21,7 @@ class InorderTraversalBT: NSObject {
         let node7 = TreeNode(7, node6, node9)
         
         let node4 = TreeNode.init(4, node2, node7)
-        node4.printBinaryTree()
+        node4.printBinaryTree(.levelOrder)
         
         let res = inorderTraversal(node4)
         print("中序遍历结果是：\(res)")

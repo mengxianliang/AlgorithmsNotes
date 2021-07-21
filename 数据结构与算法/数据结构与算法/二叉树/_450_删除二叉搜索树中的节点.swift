@@ -42,11 +42,11 @@ class DeleteNodeOfBTS: NSObject {
         let node6 = TreeNode(6, nil, node7)
         
         let node5 = TreeNode.init(5, node3, node6)
-        node5.printBinaryTree()
+        node5.printBinaryTree(.levelOrder)
         
         /// 调用删除方法
         let newRoot = deleteNode(node5, 3)
-        newRoot?.printBinaryTree()
+        newRoot?.printBinaryTree(.levelOrder)
         
     }
     

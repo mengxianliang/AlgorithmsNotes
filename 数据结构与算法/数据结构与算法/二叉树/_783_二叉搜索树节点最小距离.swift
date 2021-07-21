@@ -21,7 +21,7 @@ class MinimumDistanceBetweenBST: NSObject {
         let node13 = TreeNode(13, nil, node14)
         
         let node10 = TreeNode.init(10, node6, node13)
-        node10.printBinaryTree()
+        node10.printBinaryTree(.levelOrder)
         
         let miniDif = minDiffInBST(node10)
         print("二叉搜索树节点最小距离：\(miniDif)")
