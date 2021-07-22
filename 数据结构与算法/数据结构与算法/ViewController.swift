@@ -115,7 +115,37 @@ class ViewController: UIViewController {
 //        KthSmallestElementInBST()
         
         /// 恢复二叉搜索树
-        RecoverBST()
+//        RecoverBST()
+        
+        /**
+        测试二叉树结构
+           10
+          / \
+         6   12
+        / \   \
+       4   8   14
+      / \   \  /
+     1   5   9 13
+        */
+        
+        let node16 = TreeNode(16)
+        
+        let node1 = TreeNode(1)
+        let node5 = TreeNode(5)
+        let node9 = TreeNode(9)
+        let node13 = TreeNode(13)
+        let node15 = TreeNode(15, nil, node16)
+        
+        
+        let node4 = TreeNode(4, node1, node5)
+        let node8 = TreeNode(8, nil, node9)
+        let node14 = TreeNode(14, node13, node15)
+        
+        let node6 = TreeNode(6, node4, node8)
+        let node12 = TreeNode(12, nil, node14)
+        
+        let node10 = TreeNode.init(10, node6, node12)
+        BinaryTreePrinter.printTree(node10)
     }
 
 

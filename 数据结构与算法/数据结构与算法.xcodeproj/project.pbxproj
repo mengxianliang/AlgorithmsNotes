@@ -29,6 +29,7 @@
 		C23EFA8026A80FC400E936EC /* _230_二叉搜索树中第K小的元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23EFA7F26A80FC400E936EC /* _230_二叉搜索树中第K小的元素.swift */; };
 		C23EFA8226A8151F00E936EC /* _173_二叉搜索树迭代器.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23EFA8126A8151F00E936EC /* _173_二叉搜索树迭代器.swift */; };
 		C23EFA8426A81AF800E936EC /* _99_恢复二叉搜索树.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23EFA8326A81AF800E936EC /* _99_恢复二叉搜索树.swift */; };
+		C23EFA8626A948DE00E936EC /* BinaryTreePrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23EFA8526A948DE00E936EC /* BinaryTreePrinter.swift */; };
 		C29A31262637B77A002A73CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A31252637B77A002A73CA /* AppDelegate.swift */; };
 		C29A31282637B77A002A73CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A31272637B77A002A73CA /* SceneDelegate.swift */; };
 		C29A312A2637B77A002A73CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A31292637B77A002A73CA /* ViewController.swift */; };
@@ -88,6 +89,7 @@
 		C23EFA7F26A80FC400E936EC /* _230_二叉搜索树中第K小的元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_230_二叉搜索树中第K小的元素.swift"; sourceTree = "<group>"; };
 		C23EFA8126A8151F00E936EC /* _173_二叉搜索树迭代器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_173_二叉搜索树迭代器.swift"; sourceTree = "<group>"; };
 		C23EFA8326A81AF800E936EC /* _99_恢复二叉搜索树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_99_恢复二叉搜索树.swift"; sourceTree = "<group>"; };
+		C23EFA8526A948DE00E936EC /* BinaryTreePrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreePrinter.swift; sourceTree = "<group>"; };
 		C29A31222637B77A002A73CA /* 数据结构与算法.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "数据结构与算法.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29A31252637B77A002A73CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C29A31272637B77A002A73CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				C23EFA8126A8151F00E936EC /* _173_二叉搜索树迭代器.swift */,
 				C23EFA8326A81AF800E936EC /* _99_恢复二叉搜索树.swift */,
 				C2B074C326A52007004F3E57 /* TreeNode.swift */,
+				C23EFA8526A948DE00E936EC /* BinaryTreePrinter.swift */,
 			);
 			path = "二叉树";
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				C23EFA6C26A6685300E936EC /* _450_删除二叉搜索树中的节点.swift in Sources */,
 				C29A31282637B77A002A73CA /* SceneDelegate.swift in Sources */,
 				C23EFA7426A6D24E00E936EC /* _530_二叉搜索树的最小绝对差.swift in Sources */,
+				C23EFA8626A948DE00E936EC /* BinaryTreePrinter.swift in Sources */,
 				C23EFA7226A6C74100E936EC /* _98_验证二叉搜索树.swift in Sources */,
 				C23EFA7026A6BCFA00E936EC /* _701_二叉搜索树中的插入操作.swift in Sources */,
 				C23EFA7626A7B8B300E936EC /* _94_二叉树的中序遍历.swift in Sources */,
