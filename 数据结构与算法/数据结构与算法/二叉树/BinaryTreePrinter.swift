@@ -74,7 +74,7 @@ class BinaryTreePrinter {
             for i in 1...space {
                 
                 if currentLevel == printer.nodes.count - 1 {
-                    spaceStr.append("*")
+                    spaceStr.append(" ")
                     continue
                 }
                 
@@ -83,7 +83,7 @@ class BinaryTreePrinter {
                 }else if i == space - marginLeft/2 + 1 {
                     spaceStr.append("┌")
                 }else if i > marginLeft/2 && i < space - marginLeft/2 + 1 {
-                    spaceStr.append("*")
+                    spaceStr.append(" ")
                 }else {
                     spaceStr.append("-")
                 }
